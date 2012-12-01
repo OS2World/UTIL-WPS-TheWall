@@ -1,0 +1,30 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: Wall350r.zip
+       Short Description: Wallpaper Changer
+        Long Description: The Wall changes background images and/or color at user-set intervals.
+                          You can configure each image file in such as *.BMP/*.GIF/*.JPG/*.TIF/
+                          *.TGA/*.PCX/*.DIB in the Wall. Choose TILED, SIZED or NORMAL during
+                          configuration. The Wall writes an extended attribute for each and
+                          displays the *.BMP as configured.
+
+      Proposed directory
+           for placement: /pub/os2/util/wps
+
+               Your name: Ken Kinoshita
+           Email address: prettypop@sakura.email.ne.jp
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL: http://www.prettypop.net/
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: Warp4
+ Additional requirements: Watcom VX-REXX Runtime (VROBJ.DLL)
+
+                Replaces: wall340r.zip
+
+

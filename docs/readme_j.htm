@@ -1,0 +1,1218 @@
+<html>
+<head>
+<title>The Wall readme (Japanese)</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=Shift_JIS">
+
+<body>
+
+<p>
+<center>
+    <font color="firebrick" size=7>
+    The Wall
+    </font>
+    <br>
+    <font size=4 color="darkgoldenrod">
+    OS/2 Wallpaper Changer
+    </font>
+    <p>
+    <font size=2>
+    Copyright &copy; 1995-2004 Ken Kinoshita
+    <br>
+    email :
+    <a href="mailto:prettypop@sakura.email.ne.jp">
+    prettypop@sakura.email.ne.jp</a>
+    <br>
+    </font>
+</center>
+<p>
+
+
+<div class="Item">
+The Wallについて
+</div>
+<ul>
+    The Wallは一定時間毎にデスクトップの壁紙を変更していくいわゆる「壁紙チェンジャー」です。
+    The Wallは*.BMP, *.GIF, *.JPG, *.TIF, *.TGA, *.PCX, *.DIB形式のファイルを扱うことができます。
+    The WallはビットマップのEA Data Areaに、そのビットマップが壁紙として表示される時の状態、背景色とタイプ(Normal/Sized/Tiled)のデータを記録して使用することができます。
+    また壁紙が変更されるときに好みの音を鳴らしたり、複数の外部コマンドを実行させることができます。
+</ul>
+<p>
+
+
+<div class="item">
+インストール・アンインストール
+</div>
+<ul>
+    The WallはVX-REXXで作成されていますので、実行にはVX-REXXのRuntime Library `VROBJ.DLL'が必要となります。
+    `VROBJ.DLL'は下記をクリックするかまたはBBSやOS/2の雑誌等から入手することができます。
+    <p>
+    <ul>
+        <li>
+        <a href="http://www.prettypop.net/software/runtime/vrobj21d.zip">
+        Download VROBJ.DLL 2.1d (vrobj21d.zip)</a>
+    </ul>
+    <p>
+
+    <div class="subitem">
+    インストール
+    </div>
+    <p>
+    <ol>
+        <li type=n>
+        The Wall専用のディレクトリを作成します。
+        <ul>
+            <font color="gray">
+            ex. [X:\]md Wall
+            </font>
+        </ul>
+        <p>
+
+        <li type=n>
+        Wall???r.zipを作成したディレクトリにコピーします。
+        <p>
+
+        <li type=n>
+        Unzip.exe等を使用してファイルを解凍します。
+        <ul>
+            <font color="gray">
+            ex. [X:\Wall\]unzip Wall???r.zip
+            </font>
+        </ul>
+        <p>
+
+        <li type=n>
+        Install.cmdファイルを起動してインストールを行います。
+        <ul>
+            <font color="gray">
+            ex. [X:\Wall\]install
+            </font>
+        </ul>
+        <p>
+        このインストーラーは基本的にWall.exeのシャドウを始動フォルダに作成するだけです。
+        今後、バージョンアップ時には同じディレクトリで圧縮されたファイルを上書きで解凍するだけで再度インストール作業を行う必要はありません。
+    </ol>
+    <p>
+
+    <div class="subitem">
+    アンインストール
+    </div>
+    <p>
+    <ol>
+        The Wall専用に作成したディレクトリ毎削除してください。<br>
+        The Wallはイニシャルファイルも同じディレクトリに作成するので余計なごみを残しません。
+        ただし、BitmapのEA data areaを使用している場合はEA data areaに記録されたデータは保持されたままです。
+    </ol>
+</ul>
+<p>
+
+
+<div class="item">
+使用方法
+</div>
+<p>
+
+<ul>
+    <div class="subitem">
+    The Wallの表示モード
+    </div>
+    <br>
+    <ul>
+        The Wallはスペースの都合上、基本的な機能だけを操作できるモードと全ての機能を操作できるFull Functionモードがあります。
+        モードの切り替えは`Full Function' check boxをチェック・アンチェックすることで行います。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    使用する画像ファイルの選択
+    </div>
+    <br>
+    <ul>
+        Bitmap File Listの上にある`bmp', `gif', `jpg', `tif', `tga', `pcx', `dib' buttonのON/OFFで使用する画像ファイルタイプを選択することができます。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    ビットマップの指定
+    </div>
+    <br>
+    <ul>
+        任意のディレクトリのビットマップを使用することができます。<br>
+        ディレクトリは`Bitmap Directory'に直接Full Pathを書き込むか、画面右側の`Drive' spin buttonと`Directory' list boxを利用して設定します。
+        サブディレクトリ以下のビットマップを使用する場合は`SubDirectory' check boxをチェックしてください。
+        <p>
+        ビットマップの変更順序は`Random'または`Sequence(Bitmap Listに登録されている順序)'に選択できます。
+        現在選択されているビットマップのプレビュー・イメージが`Preview Area'に表示されます。
+        <p>
+        `Resize Bitmap' check boxをチェックすると`Preview Area'一杯に表示されます。
+        ただし、Bitmap(`*.bmp')以外のファイルの場合、Preview AreaにはThumbnailが表示されます。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    壁紙のタイプの設定
+    </div>
+    <br>
+    <ul>
+        `Image Type' spin buttonで壁紙のタイプ(Normal/Sized/Tiled)を選択します。<br>
+        Sizedを選択したときはイメージの数も選択してください。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    インターバルの設定
+    </div>
+    <br>
+    <ul>
+        インターバルの設定方法はTime Selector機能を使用する方法と、Sliderで任意の時間を設定する二種類の方法があります。
+        <p>
+        <ol>
+            <li type=a>
+            Sliderで設定<br>
+            <font color="gray">
+            Timerの単位(Second/Minutes/Hour)を選択してSliderで0～60の任意の値を設定します。<br>
+            最大60時間まで設定することができます。<br>
+            </font>
+            <p>
+            <li type=a>
+            Timer Selector機能を使用して設定<br>
+            <font color="gray">
+            Timerで任意のインターバルを選択します。<br>
+            理論上設定できる時間の上限はありません。ただし、秒には対応していません。
+            初期値では１０分から１０分間隔で最大二時間までの設定しかありませんが、任意の時間を追加することができます。
+            </font>
+        </ol>
+        <p>
+        現在のインターバルの値と壁紙が変更されるまでの残り時間は画面上に表示されます。<br>
+        `Random Timer' check boxをチェックすると設定したインターバルの間でランダムな間隔で壁紙が変更されます。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    背景色の設定
+    </div>
+    <br>
+    <ul>
+        Red/Green/Blueの各Sliderを使用して背景色を任意に設定できます。<br>
+        変更途中の色は`Preview Area'の縁に表示されます。<br>
+        背景色が決まったらColor Sliderの下の`Accept'ボタンを押すと現在表示されている壁紙の背景色が設定した背景色に変更されます。
+        <p>
+        `Color Only' check boxをチェックするとThe Wallを背景色チェンジャーとして使用できます（この時ビットマップは表示されません）。
+        <p>
+        `Random Color' check boxをチェックすると壁紙が変更される度にRandomに背景色が設定されます。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    サウンド
+    </div>
+    <br>
+    <ul>
+        壁紙が変更されるとき、Waveファイルを鳴らすことができます。<br>
+        SoundのON/OFFはスピーカアイコンで設定します。ON時は青色にOFF時は灰色になります。<br>
+        Waveファイルは任意のディレクトリのファイルを使用できます。Directory名を`Current'にするとThe Wallと同じディレクトリにあるWaveファイルを使用します（初期値）。
+        指定ディレクトリに複数のWaveファイルがある場合は自動的にランダムに選択して鳴らします。
+        <p>
+    </ul>
+
+
+    <div class="subitem">
+    Multiple External Commands機能
+    </div>
+    <br>
+    <ul>
+        The Wallでは、壁紙変更時と任意の時間に任意のプログラムを実行することができます。<br>
+        使用できるプログラムの拡張子は`*.exe', `*.com', `*.cmd', `*.bat'の４つです。<br>
+        コマンドの追加・変更・削除は`Multiple External Commands' check boxの横の`Setting' buttonを押してください。
+        <p>
+
+        <ul>
+            <li>
+            設定項目
+            <p>
+
+            <ol>
+                <li type=a>
+                `When Changed'
+                <br>
+                <font color="gray">
+                壁紙変更時にCommandを実行します。
+                </font>
+                <p>
+
+                <li type=a>
+                `Fixed Time'
+                <br>
+                <font color="gray">
+                指定した時間にCommandを実行します。
+                </font>
+                <p>
+
+                <li type=a>
+                `Enabled'
+                <br>
+                <font color="gray">
+                各External Commandの`Enabled/Disabled'を設定します。
+                </font>
+            </ol>
+        </ul>
+    </ul>
+    <p>
+
+    <div class="subitem">
+    壁紙毎に任意の設定をする(Active Individual Image機能)
+    </div>
+    <br>
+    <ul>
+        The Wallでは各Image File毎に壁紙のタイプと背景色を指定する事ができます。<br>
+        また同じディレクトリにあっても使用するImage Fileと使用しないImage Fileを任意に設定できます。
+        これはImage FileのEA Data Area<font size=2 color="red">＊</font>
+       （初期値ではコメント欄(.COMMENT)）に設定を記録することにより、実現しています。
+        <font size=2 color="red">
+        (＊ EA:拡張情報:システムまたはプログラムをファイルに関係付ける追加情報)
+        </font>
+        <p>
+
+        <ul>
+            <li>
+            記録されるデータは以下の３種類のデータです。
+            <p>
+
+            <ol>
+                <font color="gray">
+                <li type=a>
+                Use Mode (Use/Unused)
+                <li type=a>
+                Type (Normal/Sized/Tiled)
+                <li type=a>
+                Background Color
+                </font>
+            </ol>
+        </ul>
+        <br>
+        この機能を使用する場合は`Use Bitmap EA' check boxをチェックします。  <br>
+        次に使用する機能にあわせて`Type'と`Color' check boxをチェックします。<br>
+        いずれのcheck boxにもチェックされていない場合はUse/Unusedの設定のみ記録されます。<br>
+        設定を消去するときは`Clear' buttonを押して下さい。
+        <p>
+
+        <ul>
+            <li>
+            使用方法 1
+            <p>
+            <ol>
+                <li type=n>
+                Bitmap List Boxで任意のImage Fileを選択。
+                <li type=n>
+                そのImage Fileで使用するTypeを選択。
+                <li type=n>
+                Normal表示で使用する場合、背景色も設定。
+                <li type=n>
+                `Accept' buttonを押す。
+            </ol>
+            <p>
+
+            <li>
+            使用方法 2 : Key Command
+            <p>
+            幾つかの設定はKey Commandを使用して設定することができます。
+            <br>
+            Key CommandはBitmap List BoxにFocusがある時に使用できます。
+            <p>
+
+            <ul>
+                <li type=disc>
+                使用できるKey Commandは以下の５種類です。
+                <p>
+
+                <ol>
+                    <font color="gray">
+                    <li type=a>
+                    Ctrl + C : Clear EA Data        <br>
+                    <li type=a>
+                    Ctrl + N : Set Normal mode      <br>
+                    <li type=a>
+                    Ctrl + S : Set Sized mode       <br>
+                    <li type=a>
+                    Ctrl + T : Set Tiled mode       <br>
+                    <li type=a>
+                    Ctrl + U : Change Use/Unused    <br>
+                    </font>
+                </ol>
+            </ul>
+            <p>
+
+            <li>
+            使用方法 3 : マウスで設定
+            <p>
+            `Preview Area'または`Bitmap List'でファイルを選択し、マウスの右ボタンをクリックするとActive Individual Imageの設定のメニューが表示されます。
+            メニューから任意の設定を選択するだけで設定することができます。
+            また、`Bitmap List'で複数のファイルを選択することにより、複数のファイルで設定を一度に登録することが出来ます。
+            <p>
+            <ul type=disc>
+                <li>
+                ここで設定できるのは下記項目だけです。色の設定はできません。
+                <p>
+
+                <ol>
+                    <font color="gray">
+                    <li type=a>
+                    Use Mode (Use/Unuse)
+                    <li type=a>
+                    Type (Normal/Tiled/Sized)
+                    <li>
+                    Clear Data
+                    </font>
+                </ol>
+            </ul>
+        </ul>
+    </ul>
+    <p>
+
+    <div class="subitem">
+    Zero Time Function
+    </div>
+    <br>
+    <ul>
+        これはStartupの時刻に関係なく、Startupの基準時刻を00分にする機能です。<br>
+        例えばIntervalを20mで、The Wallの起動時刻を9:23の時、次回壁紙変更時刻は17分後の9:40分となります。
+        その後は20分毎(10:20,10:20,10:40...)に壁紙が変更されていきます。
+        <br>
+        Intervalが1hより多い場合、最初の壁紙変更時刻は次の00分に行われます。例えばIntervalが1h20m(80m)で、
+        The Wallの起動時刻を9:23の時、次回の壁紙変更時刻は37分後の10:00となります。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    起動時に表示するImage Fileの設定(Startup Bitmap機能)
+    </div>
+    <br>
+    <ul>
+        起動時に表示するImage Fileを設定することができます。
+        まず、`Startup Bitmap' check boxをチェックしてください。
+        Image Fileの登録には以下の2通りの方法があります。
+        `Clear' Buttonを押すと登録が消去されます。
+        <p>
+        <ol>
+            <li type=a>
+            Check boxの下のフィールドに起動時に表示したいImage Fileのファイル名をフルパスで記述する。
+            <li type=a>
+            起動時に表示したいImage Fileを選択し、`Set' Buttonを押す。
+        </ol>
+        <p>
+
+        <font color="red">
+        Note:<br>
+        </font>
+        この機能は`Change at Startup' check boxがチェックされていないと設定できません。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    Wall Emergency Option Program (WallEmr)のON/OFF
+    </div>
+    <br>
+    <ul>
+        サウンドスイッチの上のアイコンでWall Emergency Option Program (WallEmr)の起動を制御します。
+        WallEmrのスイッチがONの場合、The Wall起動時にWallEmrも同時に起動されます。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    `Exit After 1st Change'機能
+    </div>
+    <br>
+    <ul>
+        The Wall起動後、最初の壁紙変更後にThe Wallを終了させる事ができます。
+        起動時にのみ壁紙を変更させたい場合はこの機能を使用してください。
+        `Exit After 1st Change'機能は付属の Exit1chg.cmd を使用してEnable/Disableを設定します。
+        <p>
+        Usage:
+        <p>
+        <ul>
+            <li type=disc>
+            Enable `Exit After 1st Change' Function
+            <ol>
+                <font color="gray">
+                [C:\WALL]Exit1Chg /E
+                </font>
+            </ol>
+            <p>
+            <li type=disc>
+            Disable `Exit After 1st Change' Function
+            <ol>
+                <font color="gray">
+                [C:\WALL]Exit1Chg /D
+                </font>
+            </ol>
+        </ul>
+        <p>
+        <font color="red">
+        Note:
+        </font>
+        <br>
+        Exit1Chg.cmd実行前にThe Wallを終了させておく必要があります。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    External Image Viewer
+    </div>
+    <br>
+    <ul>
+        選択した画像を任意のImage Viewerで開くことができます。
+        <p>
+
+        <ul>
+            <li>
+            Image Viewerの設定
+            <ol>
+                <li>
+                `Set'ボタンを押し、任意のImage Viewerを選択します。
+            </ol>
+            <p>
+
+            <li>
+            画像を開く
+            <ol>
+                <li>
+                `Preview Area'または`Bitmap List'でファイルを選択し、マウスの右ボタンをクリックする。
+                <li>
+                `Open'をClickする。
+            </ol>
+        </ul>
+        <p>
+
+        <font color="red">
+        Note:
+        </font>
+        <br>
+        Image Viewerの初期値はOS/2 DefaultのIB.EXEです。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    Wall.iniの秘密
+    </div>
+    <br>
+    <ul>
+        最近、秘密はあまりないのですが...（＾＾；
+        <p>
+        Wall.iniはテキストファイルなので簡単にカストマイズすることができます。<br>
+        まぁ、基本的にはいじらないほうが無難です。ただし、マニュアルエディットしないとカストマイズできないパラメータもあるのです。
+        <p>
+
+        <li>
+        UseEAArea
+        <p>
+        使用するBitmapのEA areaのフィールドを指定します。コメント欄を他の目的ですでに使用している場合をのぞき、なるべく変更しないでください。
+        `.COMMENT'以外でのテストは行っていません。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    TimeSelectorのパラメータ追加・削除
+    </div>
+    <br>
+    <ul>
+        TimeSelector機能使用時に使用するパラメータの追加・削除が可能です。<br>
+        `Modify' buttonを押すと`Modify Timer Unit List' windowが開きます。
+        ここでTime Selector機能を使用する際に選択できる時間を設定します。<br>
+        初期値のパラメータは、
+        <p>
+        <ul>
+            <font color="gray"><i>
+            10m;20m;30m;40m;50m;1h;1h10m;1h20m;1h30m;1h40m;1h50m;2h
+            </i></font>
+        </ul>
+        <p>
+        となっています。`m'で分を、`h'で時間を表わします。秒には対応していませんので注意してください。
+        また、各パラメータはセミコロン(;)で区切ってください。
+        例えば、15分という単位を追加したい場合は下記のようにパラメータを追加してください。
+        <p>
+        <ul>
+            <font color="gray"><i>
+            10m;<font color="red"><u>15m;</u></font>20m;30m;40m;50m;1h;1h10m;1h20m;1h30m;1h40m;1h50m;2h
+            </i></font>
+        </ul>
+    </ul>
+    <p>
+
+    <div class="subitem">
+    The Wallの終了
+    </div>
+    <br>
+    <ul>
+        The Wallを終了させるときは`Exit' buttonを押してください。
+        終了前に確認するPopup Menuが表示されますので終了させる場合は`Go ahead...'を、キャンセルする場合は`Stop...'を押してください。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    その他の機能
+    </div>
+    <br>
+    <ul>
+        <li type=a>
+        The Wallを最少化して起動する場合は`Minimized Startup' check boxをチェックしてください。
+        <p>
+
+        <li type=a>
+        The Wall起動時に壁紙を変更する場合は`Change at Startup' check boxをチェックしてください。
+        起動時に表示する壁紙を指定することができます(
+        <a href="#起動時に表示するBitmapの設定(Startup Bitmap機能)">
+        【起動時に表示するBitmapの設定(Startup Bitmap機能)】</a>参照)。
+        <p>
+
+        <li type=a>
+        うまく壁紙が表示されない場合は、`Use Windows Bitmap' check boxをチェックしてください。
+        <p>
+
+        <li type=a>
+        The Wallはその最初の起動時に現在のディスプレイの解像度をチェックします。
+        解像度を変更した場合、再度ディスプレイサイズをチェックする必要があります。
+        解像度を変更した場合は`Check Screen Size Everytime' check boxにチェックしてください。
+        通常は常時チェックする必要はありません。
+        <p>
+
+        <li type=a>
+        壁紙変更時に選択されたファイルと`Bitmap List' list boxの表示を一致させる場合は`File Synchronize' check boxをチェックします。
+        <p>
+
+        <li type=a>
+        使用するImage Fileのファイルサイズの上限を1KB(1024Byte)単位で設定することができます。
+        上限を設定する場合は`Max Size' check boxをチェックしてください。
+        次に上限のサイズを入力してください。
+        <p>
+
+        <li type=a>
+        VX-REXXのStandard I/O RedirectionでErrorが出る場合は、`Standard I/O Redirection' check boxのcheckをOFFにしてください。
+        特に問題がない場合はいじる必要はありません。
+    </ul>
+    <p>
+
+    <div class="subitem">
+    Wall Emergency Option Program (WallEmr)の使い方
+    </div>
+    <br>
+    <ul>
+        Wallが使えればたぶん使えます...（＾＾；
+    </ul>
+</ul>
+<p>
+
+
+<div class="item">
+動作確認
+</div>
+<ul>
+    <li>
+    OS/2 Warp 4
+</ul>
+<p>
+
+
+<div class="item">
+転載・再配布の条件
+</div>
+<ul>
+    転載・再配布は基本的に自由ですが、事前に作者に許可を取ってください。<br>
+    また、転載、再配布の際にはオリジナルの配布形態を改変しないでください。
+</ul>
+<p>
+
+
+<div class="item">
+使用上の注意
+</div>
+<ul>
+    <font color="red">
+    作者はこのソフトの使用によって生じたいかなる損害にもその責任を負いません。<br>
+    また一切保証は致しません。予めご了承願います。
+    </font>
+</ul>
+<p>
+
+
+<div class="item">
+著作権
+</DIV>
+<ul>
+    このソフトウェアはフリーウェアですが、著作権は作者にあります。
+</ul>
+<p>
+
+
+<div class="item">
+ご意見・ご感想・バグ・レポート
+</DIV>
+<ul>
+    ご意見・ご感想・バグレポートは
+    <a href="mailto:prettypop@sakura.email.ne.jp">
+    prettypop@sakura.email.ne.jp</a>
+    までお願いします。
+</ul>
+<p>
+
+
+<div class="item">
+Pretty Pop Software Home Page
+</div>
+<ul>
+    最新のファイルと情報はすべて
+    <a href="http://www.prettypop.net/">
+    PrettyPop.net</a>
+    にあります。
+</ul>
+<p>
+
+
+<div class="item">
+謝辞
+</div>
+<ul>
+    <table>
+        <tr>
+            <td colspan=3>
+                Special thanks to...
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Japanese Readme</td><td>:</td><td>
+                <a href="http://y7.net/u/ri.html">
+                Tetsuya Suto</a>,
+                Yuji Kurashina
+            </td>
+        </tr>
+        <tr>
+            <td>
+                English Readme</td><td>:</td><td>
+                <a href="http://y7.net/u/ri.html">
+                Tetsuya Suto</a>,
+                Chris Owen
+            </td>
+        </tr>
+    </table>
+</ul>
+<p>
+
+
+<div class="item">
+変更履歴
+</div>
+<ul>
+    <b>Version 1.00</b> (10.Jan.96)
+    <ol>
+        <li type=a>
+        公開バージョン
+    </ol>
+    <p>
+    <b>Version 1.10</b> (25.Jan.96)
+    <ol>
+        <li type=a>
+        パラメータ変更毎にパラメータのAuto Saveを行うように変更。
+        <li type=a>
+        上記仕様変更に伴う画面デザインの変更。
+        <li type=a>
+        Undoボタンの廃止。
+        <li type=a>
+        ダイナミックにDriveをサーチするように修正。
+        <li type=a>
+        アイコンのアニメーション化。
+        <li type=a>
+        不要なコードの排除。
+        <li type=a>
+        タイマーOFF時のスライダーの値をINIファイルに書き込まないように修正。
+        <li type=a>
+        タイマーOFFでたちあげた後、タイマーをON時にスライダーの値が30に戻ってしまう不具合の修正。INIファイルの順番を変更。
+        <li type=a>
+        時計アイコンでもON/OFF出来るように変更。
+    </ol>
+    <p>
+    <b>Version 1.20</b> (28.Feb.95)
+    <ol>
+        <li type=a>
+        イメージタイプの変更を即座に反映するようにして、ChangeImageTypeボタンを廃止。
+        <li type=a>
+        壁紙を設定した時間内でランダムに変更できる機能(RandomTimer)を追加。
+        <li type=a>
+        Information WindowでHelpボタンを押した後、Main Windowに戻るように変更。
+        <li type=a>
+        HelpファイルをInfomation Windowから呼び出せるようにした変更。
+        <li type=a>
+        Helpファイル認識の際の不具合の修正とボタンの動きの変更。
+        <li type=a>
+        INIファイルが存在しないときにエラーが発生する問題を修正。
+        <li type=a>
+        INIファイルにごみが残らないように修正。
+        <li type=a>
+        INIファイルのOPTIONパラメータをマニュアルで変更するとICONが動き出すように変更。
+        <li type=a>
+        終了時の動作の無駄を排除。
+        <li type=a>
+        Bitmapを16色に減色。
+        <li type=a>
+        ICONのリソースを変更。
+        <li type=a>
+        起動時にBitmapの番号に不具合が生じる問題を修正。
+        <li type=a>
+        現在表示しているBitmapの番号を記録するように修正。これによりOrderで使用している場合、次回立ち上げ時に今回表示しているBitmapの次から続いて表示させることができるようになりました。
+    </ol>
+    <p>
+    <b>Version 2.00</b> (24.May.96)
+    <ol>
+        <li type=a>
+        バックグラウンドの背景色がデフォルト(灰色)になってしまうため、Wall本体に背景色を指定する機能を追加。ただし、OS/2形式以外のBitmapを張り付ける時何故か画面の再描画に不具合が生じる場合が多いためChangeBitmapのロジックを少し修正。
+        <li type=a>
+        壁紙が変わった後のRemain Timeの表示の不具合を修正。
+        <li type=a>
+        Random Background Color機能の追加。
+        <li type=a>
+        Color Onlyの設定も出来るように機能を追加。
+        <li type=a>
+        現在のWallのポジションを記録するように変更。ただし、そのデータを利用する機能は特にない。
+        <li type=a>
+        WallのON/OFFボタンの廃止。今後WallのON/OFFは時計ICONでのみ可能。
+        <li type=a>
+        BitmapのEA Dataを利用してBitmap毎にImageType, Background Colorを設定できる機能を追加。
+        <li type=a>
+        EA Dataを使用しているBitmapの場合、それがわかるように画面に表示するように変更。
+        <li type=a>
+        使用するBitmapのEA DataのエリアをINIファイルで指定するように変更。ただし、デフォルト(.COMMENTS)以外を指定する場合には注意が必要。
+        <li type=a>
+        壁紙変更時に音を鳴らすサウンド機能を追加。
+        <li type=a>
+        ReadINItialFileのロジックを修正。
+        <li type=a>
+        画面レイアウトの変更。
+        <li type=a>
+        その他、いろいろな不具合の修正。
+    </ol>
+    <p>
+    <b>Version 2.01</b> (17.Jul.96)
+    <ol>
+        <li type=a>
+        Time Slider変更時に行われる時間の計算式を修正。
+        <li type=a>
+        Random Timer OFF時に設定時間になり壁紙が変更されてもRemainTimeが0のままで変更されない不具合の修正。
+        <li type=a>
+        Caption等の修正とそれに伴うレイアウトの修正。
+        <li type=a>
+        EAを使用しているBitmapが表示される場合、ImageTypeの文字の色を変えるように変更。
+        <li type=a>
+        EAに記録されているデータを表示するように変更。
+        <li type=a>
+        "Accept as this bitmap data" buttonを押した時、壁紙を再描画しないように変更
+        <li type=a>
+        Random Timer OFF時の壁紙変更後のRemain Time背景色の不具合の修正。
+        <li type=a>
+        WallEmr.Exe(Wall Emergency Option Program)のWall起動時に自動的に起動するSwitchの追加。
+        <li type=a>
+        Sized, Tiled表示の場合、起動時にChangeBitmap routineが余分に呼ばれてしまう不具合の修正。
+        <li type=a>
+        Factory Setting実行時にIconのresourceが反映されない不具合を修正。
+    </ol>
+    <p>
+    <b>Version 2.10</b> (03.Nov.96)
+    <br>
+    [New Functions/Change Spec.]
+    <ol>
+        <li type=a>
+        壁紙が変わる時に外部のプログラムを起動出来る機能を追加(External Command)。使用できるFileのExtensionは`.EXE', `.CMD', `.BAT', `.COM'の４つ。
+        <li type=a>
+        未完成であった前回のWindow Positionを記録し、次回立上げ時に反映する機能を追加。
+        <li type=a>
+        画面の解像度をチェックする機能を追加。
+        <li type=a>
+        Full Functionを表示時、上記で得たScreenWidth情報を元に画面からWindowがはみ出ないように自動的に全体が表示できるエリア内に移動させる機能が有効に利用できるようになった。
+        <li type=a>
+        EA DataをClearする機能の追加。
+        <li type=a>
+        CPUのUsageを大幅に削減。
+        <li type=a>
+        各Bitmap毎に使用・不使用の設定できる機能の追加。
+        <li type=a>
+        Windows用のBitmapを使用しないときに不必要でパフォーマンスの劣化の原因となるroutineを回避できるようにする機能の追加。(ChangeBitmap)
+        <li type=a>
+        Bitmap EA dataを使用しかつBitmap List BoxにFocusがある時、Ctrl + * keyで各々のBitmapの設定を変更することのできるKey Commandを追加。(* = u:Use/Unused, n:Normal, t:Tiled, s:Sized, c:Clear)
+        <li type=a>
+        Count Down TimerにHourを追加。
+        <li type=a>
+        新しいInterval Timeを指定する機能を追加。(Use Time Selector)
+        <li type=a>
+        Bitmap NameのGroupBoxをClickすると現在使用されているBitmapをBitmap Listの該当FileにFocusが移るように仕様変更。今後GroupBox以外をClickするように仕様変更する予定。
+        <li type=a>
+        WallEmr(Ver.0.33以降)で利用する画面サイズを実際のwidth/heightに変更(いままでは解像度を使用)。
+        <li type=a>
+        INI fileに現在のVersionを表示するように変更。
+        <li type=a>
+        INI fileの項目のUsing...をすべてUse...に変更。
+        <li type=a>
+        WallEmr.exeに現在表示している壁紙のsetup情報を引き渡す項目(BitmapData)をINI
+        fileに追加。
+        <li type=a>
+        WallEmr version 1.00を添付。
+        <li type=a>
+        Resource file(BitmapとIcon)の変更。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        起動時のWindowの動きがスムーズなるようにLogicを修正。
+        <li type=a>
+        UseTypeまたはUseColorがどちらもCheckされていない場合でもUse Bitmap EAがCheckされているとそのEA Dataが壁紙に反映されてしまう問題を修正。
+        <li type=a>
+        ChangeAtStartUpとRandomTimer OptionがOFFの時、Interval Timeが27のまま変更されない不具合を修正。
+        <li type=a>
+        Bitmap EA Areaになにも情報がない場合に生じる、Use/Unuseの変換時の不具合を修正。
+        <li type=a>
+        初期状態でUse Bitmap EAをCheckするとTypeのシグナルが表示される不具合を修正。
+        <li type=a>
+        Bitmap DirectoryにBitmapが１個しかない時に起きるErrorの修正。
+        <li type=a>
+        ChangeAtStartUpとRandomTimer OptionがOFFの時、起動直後にChangeBitmapASAP Buttonを押してもBitmapが変更されない不具合を修正。
+        <li type=a>
+        Interval/Remain Timeの計算ロジックおよび表示の不具合の修正。
+    </ol>
+    <p>
+    <b>Version 2.11</b> (06.Nov.96)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        `Use Time Selector'の不具合を修正。
+    </ol>
+    <p>
+    <b>Version 2.15</b> (06.Dec.96)
+    <br>
+    [New Function]
+    <ol>
+        <li type=a>
+        `Zero Time Function'の追加
+    </ol>
+    <p>
+    <b>Version 2.16</b> (20.Dec.96)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        TimeSelecor未使用時にThe WallのswitchをON/OFFしたとき、TimeSliderの色がうまく変更されない不具合の修正。
+        <li type=a>
+        `Resize' Check Buttonをチェックしてもいつのまにかチェックがはずれてしまう不具合を修正。
+    </ol>
+    [Other]
+    <ol>
+        <li type=a>
+        画面デザインの変更・調整。
+    </ol>
+    <p>
+    <b>Version 2.20</b> (01.Jan.97)
+    <br>
+    [New Functions/Change Specifications]
+    <ol>
+        <li type=a>
+        GIF FileとJPG Fileに対応。
+        <li type=a>
+        Exit routineを簡略化。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Spaceが入っているDirectory名が使用できない不具合を修正。
+        <li type=a>
+        その他、細かいバグをいくつか修正。
+    </ol>
+    <br>
+    <b>Version 2.21</b> (13.Feb.97)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Timer Unit ListをEditする機能を追加。
+        <li type=a>
+        Warp3ではGIF, JPEG Fileを選択出来ないように仕様変更。
+    </ol>
+    [Bug Fix]
+    <br>
+    <ol>
+        <li type=a>
+        UseBitmapEA Modeの不具合の修正。
+        <li type=a>
+        その他の不具合の修正とデザインの修正。
+    </ol>
+    <br>
+
+    <b>Version 2.25</b> (15.Jun.97)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        ThinkPad等でSleep Modeから復活した時に再度Zero Timeを合わせる機能の追加。
+        <li type=a>
+        ZeroTime functionの秒単位の誤差を最少にする機能の追加。
+    </ol>
+    [Bug Fix]
+    <br>
+    <ol>
+        <li type=a>
+        MMOS/2をuninstallした時に生じる不具合の修正。
+    </ol>
+    [Other]
+    <br>
+    <ol>
+        <li type=a>
+        デザインの修正。
+    </ol>
+    <br>
+
+    <b>Version 3.00</b> (25.Mar.98)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        WindowのFontを変更できるように仕様変更。
+        <li type=a>
+        `Use Bitmap EA'の名称を`Active Individual Image'に変更。
+        <li type=a>
+        Multiple External Commands機能。
+        <li type=a>
+        TIF, TGA, PCX, DIB Image Fileに対応。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        `Active Individual Image'機能使用時にUnuseに設定しているBitmapがリストの最後まで続いたときにStuck Overで落ちるバグを修正。
+    </ol>
+    [Other]
+    <ol>
+        <li type=a>
+        Window Designの変更
+        <li type=a>
+        Sharewareになりました。
+    </ol>
+    <p>
+
+    <b>Version 3.01</b> (03.Apr.98)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Initial File読み込み時の不具合の修正。
+    </ol>
+    <p>
+
+    <b>Version 3.02</b> (09.Apr.98)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        一部のFont NameがInitial Fileから正常に読み込まれない不具合を修正。
+    </ol>
+    <p>
+
+    <b>Version 3.10</b> (15.May.98)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Active Individual ImageのSetupがマウス操作で簡単にできる機能を追加(Previre Area/Bitmap List)。
+        <li type=a>
+        Startup Bitmap Functionの追加。
+        <li type=a>
+        File Synchronize機能の追加。
+        <li type=a>
+        Maximum File Size機能の追加。
+        <li type=a>
+        File Detail(Date, Time, Size)を表示するように仕様変更。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Clear EA Dataの不具合を修正。
+        <li type=a>
+        その他の不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.11</b> (24.May.98)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        `Active Individual Image'機能の`Color'使用時の不具合の修正。
+    </ol>
+    <p>
+
+    <b>Version 3.12</b> (19.Jul.98)
+    <br>
+    [Change Specifications]
+    <ol>
+        <li type=a>
+        Timer Sliderの最小値を0から1に仕様変更。
+        <li type=a>
+        その他、細かい仕様をいくつ変更。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Drive Spin Buttonの不具合を修正。
+        <li type=a>
+        Multiple External Commandの不具合を修正。
+    </ol>
+    <p>
+
+    <b>Version 3.15</b> (30.Sep.98)
+    <br>
+    [New Function/Change Specification]
+    <ol>
+        <li type=a>
+        VX-REXXのConsoleをEnable/Disable出来るように仕様変更。
+        <li type=a>
+        Startup Bitmapをいつでも貼り付けられるように機能拡張。
+        <li type=a>
+        `Status Indicator', `Factory Setting' buttonの削除。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        その他、不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.16</b> (27.Oct.98)
+    <br>
+    [New Function/Change Specification]
+    <ol>
+        <li type=a>
+        `Exit After 1st Change'機能の追加。
+        <li type=a>
+        `Multiple External Command'の一部仕様変更。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        その他、不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.20</b> (12.Nov.98)
+    <br>
+    [New Function/Change Specification]
+    <ol>
+        <li type=a>
+        複数ファイルで`Active Individual Image'の設定を一度に登録できるように仕様変更。
+    </ol>
+    <p>
+
+    <b>Version 3.25</b> (30.Jan.99)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        音量調整出来るようにボリュームを追加。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        その他、不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.26</b> (12.Feb.99)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.27</b> (11.Mar.99)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.30</b> (08.May.99)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        `External Image Viewer'機能の追加。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.31</b> (21.Aug.99)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        `Active Individual Image'機能で設定値をContext Menuに表示する様に仕様変更。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        `File Synchronize'機能の不具合の修正。
+        <li type=a>
+        OS/2 Shutdown時に生じる不具合の修正。
+    </ol>
+    <p>
+
+    <b>Version 3.32</b> (26.Sep.99)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        不具合の修正とデザインの修正。
+    </ol>
+    <p>
+
+    <b>Version 3.33</b> (13.Nov.99)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        OS/2 Shutdown時に生じる不具合の修正(Fini error)。
+    </ol>
+    <p>
+
+    <b>Version 3.40</b> (11.Nov.2000)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        `Multiple External Command'の機能強化。
+        <li type=a>
+        WallEmer Version 1.11の同梱。
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        その他、細かい不具合の修正。
+    </ol>
+    <p>
+
+    <b>Version 3.50</b> (12.Sep.2004)
+    <br>
+    <ol>
+        <li type=a>
+        Freewareとなりました。
+        <li type=a>
+        StartupBitmapNameにスペースが入っていると正しく認識しない問題を修正。
+    </ol>
+</ul>
+
+<font color="papayawhip">
+</body>
+</html>
+

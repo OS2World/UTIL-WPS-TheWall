@@ -1,0 +1,1190 @@
+<html>
+<head>
+<title>The Wall readme (English)</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html" CHARSET="latin1">
+
+<body>
+
+<p>
+<center>
+    <font color="firebrick" size=7>
+    The Wall
+    </font>
+    <br>
+    <font size=4 color="darkgoldenrod">
+    OS/2 Wallpaper Changer
+    </font>
+    <p>
+    <font size=2>
+    Copyright &copy; 1995-2004 Ken Kinoshita
+    <br>
+    email :
+    <a href="mailto:prettypop@sakura.email.ne.jp">
+    prettypop@sakura.email.ne.jp</a>
+    <br>
+    </font>
+</center>
+<p>
+
+
+<div class="item">
+What is the Wall?
+</div>
+<p>
+<ul>
+    Thank you for the download of `the Wall'.
+    The Wall changes background images and/or color at user-set intervals.
+    <p>
+    This program is licensed to you under the provisions of the License Agreement included in this file.
+    Use of this program constitutes your acceptance of such Agreement.
+    <p>
+    You can configure each image file in such as *.BMP/*.GIF/*.JPG/*.TIF/*.TGA/*.PCX/*.DIB in the Wall.
+    Choose TILED, SIZED or NORMAL during configuration.
+    The Wall writes an extended attribute for each and displays the .BMP as configured.
+    <p>
+    This OS/2 application requires VROBJ.DLL, the runtime module from Watcom VX-REXX.
+    <br>
+    You can get a copy from...
+    <p>
+    <ul>
+        <li>
+        <a href="http://www.prettypop.net/software/runtime/vrobj21d.zip">
+        Download VROBJ.DLL 2.1d (vrobj21d.zip)</a>
+    </ul>
+    <p>
+    Please email any questions, opinions, ideas, reports, etc. regarding the Wall to my address:
+    <p>
+    <ul>
+        <a href="mailto:prettypop@sakura.email.ne.jp">
+        prettypop@sakura.email.ne.jp</a>
+    </ul>
+    <p>
+    Please feel free to write me anything you mentioned.
+</ul>
+<p>
+
+
+<div class="item">
+Installation
+</div>
+<ul>
+    <ol>
+        <li type=a>
+        Create a subdirectory
+        <ul>
+            <font color="gray">
+            ex. [x:\]md Wall
+            </font>
+        </ul>
+        <li type=a>
+        Move or copy Wall???r.zip to the directory created in action a.
+        <li type=a>
+        Unzip Wall???r.zip using your favorite zip utility
+        <li type=a>
+        Run install.cmd from a OS/2 command line.
+        <ul>
+            <font color="gray">
+            ex. [x:\Wall\]install
+            </font>
+        </ul>
+        <li type=a>
+        Now you can return to the WorkPlaceShell.<br>
+        The Wall is automatically added to your StartUp folder.
+        <li type=a>
+        Double-click the Wall Program Referenced Object to start the Wall.
+    </ol>
+    <p>
+    <ul>
+        <li>
+        This installation does not alter your config.sys.
+        <li>
+        Wall upgrades can be installed over existing Wall installations.
+        <li>
+        No other steps (such as rebooting your computer) are required.
+    </ul>
+    <p>
+    <font color="red">
+    Caution:<br>
+    </font>
+    This application requires the installation of "VROBJ.DLL".
+    <br>
+    You can get a copy from...
+    <p>
+    <ul>
+        <li>
+        <a href="http://www.prettypop.net/software/runtime/vrobj21d.zip">
+        Download VROBJ.DLL 2.1d (vrobj21d.zip)</a>
+    </ul>
+</ul>
+<p>
+
+
+<div class="item">
+Uninstallation
+</div>
+<ul>
+    How to uninstall the Wall...
+    <p>
+    <ol>
+        <li type=a>
+        Close the Wall.
+        <li type=a>
+        Delete all files in the directory you have given to the Wall.
+        <ul>
+            <font color="gray">
+            ex. [x:\]del x:\Wall\*.*
+            </font>
+        </ul>
+        <li type=a>
+        Remove the directory you have given to the Wall.
+        <ul>
+            <font color="gray">
+            ex. [x:\]rd Wall
+            </font>
+        </ul>
+    </ol>
+    <p>
+    With the exception of EA data, all Wall files remain in the home subdirectory, including WALL.ini.
+</ul>
+<p>
+
+
+<div class="item">
+Functions
+</div>
+<p>
+<ul>
+
+    <div class="subitem">
+    Setting Options
+    </div>
+    <p>
+    <ul>
+        When you first start the Wall, the "simple" settings notebook appears.
+        Check `Full Function' check box to see all settings options.
+        The "Full Function" window will open automatically until unchecked.
+        <p>
+        <ol>
+            <li type=a>
+            Select the bitmap directory:<br>
+            <font color="gray">
+            The Wall automatically uses the \os2\bitmap directory.
+            You can select another directory by typing in full path of the directory or by using the `Drive' button and with `Directory' list.
+            Either way you gets the same result.
+            </font>
+            <li type=a>
+            Select the bitmap subdirectory:<br>
+            <font color="gray">
+            You can also appoint the subdirectories by checking the `SubDirectory' check box,
+            however, the selection of subdirectories will be automatically set under the parent directory which you select.
+            </font>
+            <li type=a>
+            Be sure to check the buttons located on the bottom of `Bitmap List'list box applied to the file types you may use for your desktop,
+            in such as the use of `bmp', `gif', `jpg', `tif', `tga', `pcx' and `dib',
+            otherwise such types of files might not be appeared on your desktop appropriately.
+            <li type=a>
+            Order your bitmaps:<br>
+            <font color="gray">
+            Your bitmaps will appear in alphabetical order when you check `Sequence'.
+            Check `Random' if you prefer the random appearance of backgrounds.
+            </font>
+            <li type=a>
+            The `Preview Area' shows the currently selected bitmap.<br>
+            <font color="gray">
+            You can see the image in full by checking `Resize Bitmap' check box.
+            If image file except .bmp is selected, then preview window shows only thumbnail.
+            </font>
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Types
+    </div>
+    <p>
+    <ul>
+        You can set the types of the Image File for each and every Image File you selected by selecting the `Image Type' spin button,
+        such as Normal, Sized, Tiled.
+        Please set the tile ratio when you select the `Sized'.
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Intervals
+    </div>
+    <p>
+    <ul>
+        You have 2 ways of set intervals.
+        <p>
+        <ol>
+            <li type=a>
+            Select seconds, minutes or hours.
+            Then use the slider to select the number of units(1-60) desired.
+            <li type=a>
+            You can set it by using the `Time selector'.
+            It allows you to easy setting in each 10 minutes period up to one hundred twenty minutes (2 hours).
+            Additionally, you can set it more than such two (2) hours by editing the Wall.ini (see `The Secret of Wall.ini').
+            There might be no theological limitation of the interval time if you challenge editing the Wall.ini.
+            <li type=a>
+            The set of the interval and the time remains will be shown in the each window:  Interval; Remaining.
+        </ol>
+        <br>
+        <font color="red">
+        Note:<br>
+        </font>
+        WALL.ini can be edited in a text editor. Additional time settings can be made this way.
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Editing parameters for the `TimeSelector'
+    </div>
+    <p>
+    <ul>
+        Clicking the `Modify' button opens the `Modify Timer Unit List' window.
+        That lets you to edit the parameters of the `TimeSelector' by adding and/or eliminating the numbers being specified to allows the usable time in such TimeSelector function.
+        <br>
+        The default number is;
+        <p>
+        <ul>
+            <font color="gray"><i>
+            10m;20m;30m;40m;50m;1h;1h10m;1h20m;1h30m;1h40m;1h50m;2h.
+            </i></font>
+        </ul>
+        <p>
+        The word "m" means "minute".
+        The word "h" stands "hour" (No seconds will be available in this setting.)
+        <br>
+        Separate each parameter with a semicolon(;).
+        <br>
+        For Example, you want to add 15minutes to these parameters,
+        <br>
+        then;
+        <p>
+        <ul>
+            <font color="gray"><i>
+            10m;<font color="red"><u>15m;</u></font>20m;30m;40m;50m;1h;1h10m;1h20m;1h30m;1h40m;1h50m;2h
+            </i></font>
+        </ul>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Zero Time Function
+    </div>
+    <p>
+    <ul>
+        <ol>
+            <li type=a>
+            Use `ZeroTimeFunction' to set up the Wall startup time on exact hour basis (xx:00).
+            <br>
+            <font color="gray">
+            Let's say,<!br>
+            you set the interval as 20min. and start the program at 09:23,
+            the FIRST change will come at 09:40 rather than 09:43 and the program will change the bitmap every 20min.
+            after then... such as 10:00, 10:20, 10:40 so on...
+            </font>
+            <p>
+
+            <li type=a>
+            If the set interval is over one hour, the FIRST change will be the next xx:00.
+            <br>
+            <font color="gray">
+            Say,
+            you set 1h20min. for the interval and start the program at 09:23,
+            the FIRST change will be at 10:00 rather than 10:43. Then the program will change the bitmap every 1h20min.(80min.) after then.
+            </font>
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Settings of the Colors
+    </div>
+    <p>
+    <ul>
+        <ol>
+            <li type=a>
+            You can set your own color mix by moving each color sliders up and down.
+            Watch the frame of the `Preview Area' until the desired color appears.
+            <li type=a>
+            Check the `Accept' button once you find the desired combination.
+            <li type=a>
+            Check the `Color Only' check box to change colors only.
+            Background images will not appear using this option.
+            <li type=a>
+            Checking the `Random Color' check box allows the Wall to select colors at random.
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Startup Bitmap Function</i>
+    </div>
+    <p>
+    <ul>
+        You can set startup image file.
+        <p>
+
+        <ol>
+            <li>
+            Check `Change at Startup' check box.
+            <li>
+            Check `Startup Image' check box.
+            <li>
+            There are 2 ways to set image.
+            <ol>
+                <li type=a>
+                Type image file name with fullpath into entry field.
+                <li type=a>
+                Select image file at `Bitmap List' and push `Set' button.
+            </ol>
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Set Active Individual Images
+    </div>
+    <p>
+    <ul>
+        You can maintain the individual settings in background color and image type to each bitmap you selected.
+        <p>
+        <ol>
+            <li type=1>
+            Check the `Use Bitmap EA' check box.
+
+            <li type=1>
+            Select image file in the `Bitmap List Box'.
+
+            <li type=1>
+            Set Active Individual Image parameter.
+            <br>
+            There are 3 ways to select Active Individual Image parameters.
+            <p>
+
+            <ol>
+                <li type=a>
+                Choose tiled/normal/sized (select the Background Color as well when choosing Normal) click `Accept'.
+                Now the individual settings you selected are maintained in the EA of the selected Image File.
+
+                <li type=a>
+                You can accomplish most of the above functions by using `Key Commands'.
+                `Key Commands' are available when the focus is in the `Bitmap List' list box.
+                <br>
+                Below are the 5 key commands you can use.
+                <p>
+                <ol><ol>
+                    <font color="gray">
+                    <li type=a>
+                    Ctrl + C : Clear EA Data            <br>
+                    <li type=a>
+                    Ctrl + N : Set Normal mode          <br>
+                    <li type=a>
+                    Ctrl + S : Set Sized mode           <br>
+                    <li type=a>
+                    Ctrl + T : Set Tiled mode           <br>
+                    <li type=a>
+                    Ctrl + U : Change Use/Unused.       <br>
+                    </font>
+                </ol></ol>
+                <p>
+
+                <li type=a>
+                Click mouse right button on `Preview Area' or file selected at `Bitmap List' list box,
+                you can select parameter.
+                You may set and register the setting of more than one bitmap files at one time by selecting them from the `Bitmap List'.
+                <br>
+                You can only select following parameters with this way.
+                <p>
+
+                <ol><ol>
+                    <font color="gray">
+                    <li type=a>
+                    Use Mode (Use/Unuse)
+                    <li type=a>
+                    Type (Normal/Tiled/Sized)
+                    <li>
+                    Clear Data
+                    </font>
+                </ol></ol>
+            </ol>
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Muliple External Commands
+    </div>
+    <p>
+    <ul>
+        The Wall allows you to execute the option programs such as:
+        <font color="gray">
+        *.exe, *.com, *.cmd, *.bat
+        </font>.
+        <br>
+        You may add and delete those option programs by clicking `Detail' button besides the `Multiple External Commands' check box.
+        <p>
+
+        This function has following parameters.
+        <p>
+
+        <ol>
+            <li type=a>
+            `When Changed'
+            <br>
+            <font color="gray">
+            The external commnad will run when the Wall changes the background image.
+            </font>
+
+            <li type=a>
+            `Fixed Time'
+            <br>
+            <font color="gray">
+            The external command will run at exact time you set.
+            </font>
+
+            <li type=a>
+            `Enabled'
+            <br>
+            <font color="gray">
+            You can set `Enabled/Disabled' by each external command.
+            </font>
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Sound
+    </div>
+    <p>
+    <ul>
+        You can play a wave file(`*.wav') files when the wall paper changes.
+        <p>
+        <ol>
+            <li type=a>
+            Check the `Speaker Icon' to set "ON"; Uncheck to turn off sound.
+            (The sound icon is blue when on, gray when off.)
+            <li type=a>
+            To use optional wave files(`*.wav'), select your own sound directory by typing the directory path into the "Sound Dir" field.
+            When multiple .wav files reside in your subdirectory, the files are played in random.
+            <li type=a>
+            `Current' is the default setting.
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Exit After 1st Change Function
+    </div>
+    <p>
+    <ul>
+        You can exit the Wall after its first change.
+        <br>
+        You can enable/disable this function with Exit1Chg.cmd.
+        <p>
+        Usage:
+        <p>
+        <ul>
+            <li type=disc>
+            Enable `Exit After 1st Change' Function
+            <ol>
+                <font color="gray">
+                [C:\WALL]Exit1Chg /E
+                </font>
+            </ol>
+            <p>
+            <li type=disc>
+            Disable `Exit After 1st Change' Function
+            <ol>
+                <font color="gray">
+                [C:\WALL]Exit1Chg /D
+                </font>
+            </ol>
+        </ul>
+        <p>
+        <font color="red">
+        Note:
+        </font>
+        <br>
+        You should exit the Wall before run Exit1Chg.cmd.
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    External Image Viewer
+    </div>
+    <p>
+    <ul>
+        You can open selected image by external image viewer.
+        <p>
+
+        <ul>
+            <li>
+            Set Image Viewer
+            <ol>
+                <li>
+                Click `Set' button for selecting image viewer.
+                <li>
+                Select image viewer file.
+            </ol>
+            <p>
+
+            <li>
+            Open Image
+            <ol>
+                <li>
+                Click mouse right button on `Preview Area' or file selected at `Bitmap List' list box.
+                <li>
+                Select `Open' parameter.
+            </ol>
+        </ul>
+        <p>
+
+        <font color="red">
+        Note:
+        </font>
+        <br>
+        Default viewer is OS/2 IB.EXE.
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    The Secret of Wall.ini
+    </div>
+    <p>
+    <ul>
+        Wall.ini is the simple text file which you can edit by any editor you like.
+        <p>
+        <font color="red">
+        Caution:
+        </font>
+        <br>
+        Be sure to back up WALL.ini before editing.
+        <br>
+        Please do not touch it unless you must and know what you're doing.
+        <p>
+        <ul>
+            <li>
+            UseEAArea:
+            Set the field to use the EA area of bitmap file.
+            No tests have done other than the `.COMMENT' field.
+            So alteration is not recommended in this section.
+        </ul>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Wall Emergency Option Program (WallEmr)
+    </div>
+    <p>
+    <ul>
+        You can  start the Wall Emergency Option Program ("WallEmr") at the same time the Wall starts by setting
+        "ON" of the WallEmr button which is located the Speaker Icon.  (see the use of WallEmr)
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Wall Emergency Option Program
+    </div>
+    <p>
+    <ul>
+        You can use it as you use the Wall....
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Termination
+    </div>
+    <p>
+    <ul>
+        Not recommended! But if you must....<br>
+        You can check out anytime you like by pressing "Exit".
+        <p>
+        <ol>
+            <li type=a>
+            You can terminate the Wall by pressing the `Go ahead...' when you see the confirmation popup menu after you pressed the `Exit' button.
+            <li type=a>
+            You can cancel the such termination by pressing the `Stop...' when you see the confirmation popup menu. (Thank you)
+        </ol>
+    </ul>
+    <p>
+
+
+    <div class="subitem">
+    Other Functions
+    </div>
+    <p>
+    <ul>
+        <ol>
+            <li type=a>
+            Start the Wall minimized by checking the `Minimized Startup' check box.
+            <li type=a>
+            Change backgrounds at startup by checking `Change at Startup' check box.
+            You can set startup image file (ref.
+            <a href="#Startup Bitmap Function">
+            Startup Bitmap Function</a>).
+            <li type=a>
+            Use Windows-type bitmaps (rather than the OS/2) by checking `Use Windows Bitmap' check box.
+            (Try this check box if you have a problem of viewing selected bitmaps.)
+            <li type=a>
+            Check the `Check Screen Size Everytime' check box when you change your desktop size (size of screen).
+            Do not need this option to be checked otherwise.
+            <li type=a>
+            Check the `File Synchronize' check box if you want to synchronize indicate file name of `Bitmap List' when changed background.
+            <li type=a>
+            Check the `Max Size' check box if you wan to set maximum image file size.
+            You can set size every 1KB (1024byte).
+        </ol>
+    </ul>
+    <p>
+
+</ul>
+<p>
+
+<div class="item">
+Working Conditions
+</div>
+<ul>
+    <li>
+    OS/2 Warp V4
+</ul>
+<p>
+
+
+<div class="item">
+Distribution
+</div>
+<ul>
+    Please ask a written consent of the author before distributing this software in any manner.
+    You may not modify The Wall in any way nor may you reverse assemble,
+    reverse compile, or otherwise translate or reverse engineer its executable codes or datas.
+</ul>
+<p>
+
+
+<div class="item">
+License Agreement
+</div>
+<ul>
+    The Wall, its executable and documentation, is the
+    copyrighted property of Ken Kinoshita.  It is licensed, not given, for
+    your personal use.
+</ul>
+<p>
+
+
+<div class="item">
+Warranty
+</div>
+<ul>
+    <font color="red">
+    The Wall is provided AS IS. Use it at your own risk.
+    There are no warranties, express or implied, of any sort.
+    By use of this program, you agree to the terms and conditions as stated.
+    </font>
+</ul>
+<p>
+
+
+<div class="item">
+Reports
+</div>
+<ul>
+    <font color="lightseagreen">
+    Email:
+    </font>
+    <ul>
+        <font size=3>
+        <a href="mailto:prettypop@sakura.email.ne.jp">
+        Ken Kinoshita &lt;prettypop@sakura.email.ne.jp&gt;
+        </a>
+        </font>
+        <br>
+        Opinions, ideas, or bug reports are encouraged.
+    </ul>
+</ul>
+<p>
+
+
+<div class="item">
+Pretty Pop Software Home Page
+</div>
+<ul>
+    All latest files and information are available on...
+    <p>
+
+    <ul>
+        <li>
+        <a href="http://www.prettypop.net/">
+        PrettyPop.net</a>
+    </ul>
+</ul>
+<p>
+
+
+<div class="item">
+Thanks to...
+</div>
+<ul>
+    <table>
+        <tr>
+            <td colspan=3>
+                Special thanks to...
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Japanese Readme</td><td>:</td><td>
+                <a href="http://y7.net/u/ri.html">
+                Tetsuya Suto</a>,
+                Yuji Kurashina
+            </td>
+        </tr>
+        <tr>
+            <td>
+                English Readme</td><td>:</td><td>
+                <a href="http://y7.net/u/ri.html">
+                Tetsuya Suto</a>,
+                Chris Owen
+            </td>
+        </tr>
+    </table>
+</ul>
+<p>
+
+
+<div class="item">
+History
+</div>
+<ul>
+    <b>Version 1.00</b> (10.Jan.1996)
+    <p>
+    <b>Version 1.10</b> (25.Jan.1996)
+    <p>
+    <b>Version 1.20</b> (28.Feb.1996)
+    <p>
+    <b>Version 2.00</b> (24.May.1996)
+    <p>
+    <b>Version 2.01</b> (17.Jul.1996)
+    <p>
+
+    <b>Version 2.10</b> (03.Nov.1996)
+    <br>
+    [New Functions/Change Specifications]
+    <ol>
+        <li type=a>
+        Added External Command.
+        Available File Extensions: `.EXE', `.CMD', `.BAT', `.COM'.
+        <li type=a>
+        Added Remembering Window Position.
+        <li type=a>
+        Added Checking the Screen Size.
+        <li type=a>
+        Full Function Window will be automatically be moved within the Screen Width.
+        <li type=a>
+        Added Clearing the EA Data.
+        <li type=a>
+        Gain CPU Usage.
+        <li type=a>
+        Added an new function `Use/Unused'.
+        <li type=a>
+        Added an new mode to eliminate the routines to cover the viewing of Windows Type bitmaps.
+        <li type=a>
+        Added an new function to activate the `Key Commands' in the `Bitmap List Box'.
+        <li type=a>
+        Added "Hour" in the Count Down Timer.
+        <li type=a>
+        Added an new Interval Time Settings as `Use Time Selector'.
+        <li type=a>
+        Changed the focus of the current bitmap to such file of the
+        `Bitmap List' when click the GroupBox of Bitmap Name.
+        <li type=a>
+        Changed the WallEmr (ver.0.33 and later version) to use the actual screen size in both width and height.
+        <li type=a>
+        Changed to indicate the current version in the INI file.
+        <li type=a>
+        Changed the title:  "Using..." in the INI file  to say: "Use..."
+        <li type=a>
+        Added the BitmapData, in INI file, which gives the setup information of the current bitmap to the WallEmr.exe.
+        <li type=a>
+        Included the WallEmr version 1.00.
+        <li type=a>
+        Changed resource files(Bitmaps and Icons).
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Adjusted the logic to start the window smoothly.
+        <li type=a>
+        Corrected the problem of reflecting the EA Data even neither the UseType nor UseColor is not checked but the `Use bitmap EA' is checked.
+        <li type=a>
+        Corrected the problem of the Interval Time remains "27" when the ChangeAtStartup and RandomTimer Option is set "OFF".
+        <li type=a>
+        Adjusted the problem with regard to the `Use/Unused' of no datas in the Bitmap EA Area.
+        <li type=a>
+        Corrected the problem of indicating the Type signal when checking the Use Bitmap EA under the initial condition.
+        <li type=a>
+        Corrected an error occurs to a single bitmap located in the selected Bitmap Directory.
+        <li type=a>
+        Corrected the problem that the unchange of bitmap occurs even click the ChangeBitmapASAP when both the ChangeAtStartup and the RandomTimer Option set "OFF".
+        <li type=a>
+        Adjusted the logic to indicated the correct Interval/Remain Time.
+    </ol>
+    <p>
+
+    <b>Version 2.11</b> (06.Nov.1996)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Corrected the problem of `Use Time Selector' mode.
+    </ol>
+    <p>
+    <b>Version 2.15</b> (06.Dec.1996)
+    <br>
+    [New Function]
+    <ol>
+        <li type=a>
+        Added Zero Time Function
+    </ol>
+    <p>
+    <b>Version 2.16</b> (20.Dec.1996)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed TimeSlider ColorBar to indicate the appropriate color even after switched On/Off the Wall, in condition of the TimeSelector function is not checked.
+        <li type=a>
+        Fixed the unconditionally uncheck the `Resize' button to keep it as checked.
+    </ol>
+    [Other...]
+    <ol>
+        <li type=a>
+        Modified of The Wall window design.
+    </ol>
+    <p>
+
+    <b>Version 2.20</b> (01.Jan.1997)
+    <br>
+    [New Functions/Change Specifications]
+    <ol>
+        <li type=a>
+        The Wall new version, working with WARP4, will work not only with BMP's, but it could also be cooperated with other types of flies, such as GIF's and JPG's.
+        <li type=a>
+        Simplified the Exit routine.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed to be able to use the directory names with spaces.
+        <li type=a>
+        Fixed a few minor bugs in this version, too.
+    </ol>
+    <p>
+
+    <b>Version 2.21</b> (13.Feb.1997)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Addded the new function that allows you easily edit the
+        `TimerUnitList'.
+        <li type=a>
+        Altered the image file function that will not let you choose the GIF and JPEG files under the Warp3 system.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Maintained the `UseBitmapEA Mode' works properly.
+        <li type=a>
+        Also maintained other minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 2.25</b> (15.Jun.1997)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Added the new function that allows you to set the `Zero Time' when the machine such as ThinkPad, i.e., awaken from the sleep mode.
+        <li type=a>
+        Added new function to minimizes the differences in seconds of the `Zero Time' function.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the inconveniences occures when uninstalling the MMOS/2.
+    </ol>
+    [Other]
+    <ol>
+        <li type=a>
+        Modified the outlooks.
+    </ol>
+    <p>
+
+    <b>Version 3.00</b> (25.Mar.1998)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Altered the specification to be able to use different fonts in the windows.
+        <li type=a>
+        Changed the `Use Bitmap EA' button to the `Activate Individual Images'.
+        <li type=a>
+        Added the new `Multiple External Commands' function.
+        <li type=a>
+        Now TIF, TGA, PCX, DIBs are available.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the trouble with stuck over bug appeared with the over listing of the Bitmaps when the `Acitvate Individual Image' is set to be the `Unuse'.
+    </ol>
+    [Other]
+    <ol>
+        <li type=a>
+        New designed window.
+        <li type=a>
+        Became The SHAREWARE.
+    </ol>
+    <p>
+
+    <b>Version 3.01</b> (03.Apr.1998)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the inconveniences occures when reading initial file.
+    </ol>
+    <p>
+
+    <b>Version 3.02</b> (09.Apr.1998)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the trouble with reading some font name.
+    </ol>
+    <p>
+
+    <b>Version 3.10</b> (15.May.1998)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Added the popup menu to setup  the Active Individual Image in Preview are and Bitmap List area.
+        <li type=a>
+        Added `Startup Bitmap' Function.
+        <li type=a>
+        Added `File Synchronize' Function.
+        <li type=a>
+        Added `Maximum File Size' Function.
+        <li type=a>
+        Added File Detail(Date, Time, Size) indicator.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed `Clear EA Data' problem.
+        <li type=a>
+        Also maintained other minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.11</b> (24.May.1998)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the inconveniences occures when used `Active Individual Image - Color' Function.
+    </ol>
+    <p>
+
+    <b>Version 3.12</b> (19.Jul.1998)
+    <br>
+    [Change Specifications]
+    <ol>
+        <li type=a>
+        Changed Minimum Timer Slider value from 0 to 1.
+        <li type=a>
+        Changed a few specification in this version, too.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed a problem of Multiple External Command.
+        <li type=a>
+        Fixed a problem of Drive Spin button.
+    </ol>
+    <p>
+
+    <b>Version 3.15</b> (30.Sep.1998)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Added the new `Enable/Disable VX-REXX Console' function.
+        <li type=a>
+        Deleted `Status Indicator' and `Factory Setting' button.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Also maintained other minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.16</b> (27.Oct.1998)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Add the new `Exit After 1st Change' function.
+        <li type=a>
+        Changed `Multiple External Command' function.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Also maintained other minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.20</b> (12.Nov.1998)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Specification changed to be set and registered the `Actual Individual Imange' of more than one bitmap files at one time by selecting them from the `Bitmap List'.
+    </ol>
+    <p>
+
+    <b>Version 3.25</b> (30.Jan.1999)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Added sound volume slider.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Also maintained other minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.26</b> (12.Feb.1999)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Maintained minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.27</b> (11.Mar.1999)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Maintained minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.30</b> (08.May.1999)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Added `External Image Viewer' function.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Maintained minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.31</b> (21.Aug.1999)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Specification changed to be checked the `Actual Individual Imange' parameters on context menu.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the inconveniences of `File Synchronize' function.
+        <li type=a>
+        Fixed the inconveniences occures when shutdown.
+    </ol>
+    <p>
+
+    <b>Version 3.32</b> (26.Sep.1999)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Maintained minor inconveniences and designs.
+    </ol>
+    <p>
+
+    <b>Version 3.33</b> (13.Nov.1999)
+    <br>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Fixed the inconveniences occures when shutdown (Fini error).
+    </ol>
+    <p>
+
+    <b>Version 3.40</b> (11.Nov.2000)
+    <br>
+    [New Function/Change Specifications]
+    <ol>
+        <li type=a>
+        Modify and upgrade `Multiple External Command' function.
+        <li type=a>
+        Include WallEmer Version 1.11.
+    </ol>
+    [Bug Fix]
+    <ol>
+        <li type=a>
+        Maintained minor inconveniences and designs.
+    </ol>
+
+    <p>
+
+    <b>Version 3.50</b> (12.Sep.2004)
+    <br>
+    <ol>
+        <li type=a>
+        Released version 3.50 as freeware.
+        <li type=a>
+        Fixed the inconveniences of `StartupBitmapName' function.
+    </ol>
+</ul>
+
+<font color="papayawhip">
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+/*
+ *  The Wall Resource File
+ *
+ */
+bitmap 100 kinop.bmp
+bitmap 110 ken.bmp
+
+bitmap 118 wall.bmp
+
+bitmap 120 on.bmp
+bitmap 122 sleep.bmp
+bitmap 124 off.bmp
+
+bitmap 126 paintfrg.bmp
+
+bitmap 130 SndOn.bmp
+bitmap 132 SndOff.bmp
+bitmap 134 Sounds.bmp
+bitmap 136 WLemrON.bmp
+bitmap 138 WLemrOFF.bmp
+
+bitmap 140 multiselect.bmp
+
+icon   150 wall.ico

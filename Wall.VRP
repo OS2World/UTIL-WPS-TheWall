@@ -1,0 +1,14 @@
+VX-REXX OS/2 V2.12 Build B3
+VRX: Window1.VRX
+MacroPath: VRM:F:\REXX_PGM\REXX_Walls
+EXEPath: 
+RunParameters: debugmode
+RunDirectory: F:\REXX_PGM\REXX_Walls
+VRXWindow: __VREMainWindow,1,446,84,903,8239
+VRXWindow: __VRESectionListWindow,1,1132,12033,8025,3264
+VRXWindow: __VREToolsWindow,1,8118,13093,3881,1597
+VRXWindow: __VREWindListWindow,1,9925,8371,2349,3150
+UserFile: 1
+UserWindow: Window1,1
+UserWindow: SW_SetExternalCommands,1
+UserWindow: SW_Registry,1
